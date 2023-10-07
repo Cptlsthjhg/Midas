@@ -12,23 +12,26 @@ normal code.
 Setup Process:
 ==============================
 
-Step 1: Open your command-line and browse to the folder where you extracted the zip file.
+Step 1:
+   Verify JDK 17 install with 'java -version' in-terminal.
+   Verify that VS Code is installed. Launch it.
 
-Step 2: You're left with a choice.
-If you prefer to use Eclipse:
-1. Run the following command: `gradlew genEclipseRuns` (`./gradlew genEclipseRuns` if you are on Mac/Linux)
-2. Open Eclipse, Import > Existing Gradle Project > Select Folder 
-   or run `gradlew eclipse` to generate the project.
+Step 2:
+   Install all of the following extensions for VS Code:
+      Gradle for Java
+      Minecraft Essentials Extension Pack
+      Extension Pack For Java
 
-If you prefer to use IntelliJ:
-1. Open IDEA, and import project.
-2. Select your build.gradle file and have it import.
-3. Run the following command: `gradlew genIntellijRuns` (`./gradlew genIntellijRuns` if you are on Mac/Linux)
-4. Refresh the Gradle Project in IDEA if required.
+   If you installed extensions, restart VS Code.
+   Verify that VS Code is running.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can 
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+Step 3:
+   In the project's root directory, verify that there is a directory listed as '.vscode'.
+   In the top right, open a new terminal (or use the short cut ' ctr + shift + ` ').
+   Run the following command: './gradlew genVSCodeRuns'
+
+Step 4:
+   Verify everything runs by using the 'runClient' option in the 'Run and Debug' section of VS.
 
 Mapping Names:
 =============================
