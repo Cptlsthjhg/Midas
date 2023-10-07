@@ -27,7 +27,7 @@ import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(MidasMod.MODID)
+@Mod(MidasMod.MODID) //blah blah blah. this is a test to see if the committing worked.
 public class MidasMod
 {
     // Define mod id in a common place for everything to reference
