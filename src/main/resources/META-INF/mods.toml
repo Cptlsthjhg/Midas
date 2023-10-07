@@ -1,8 +1,15 @@
+[[mods]]
 modid = "midas"
 name = "Midas"
+displayName="Example Mod" #mandatory
 description = "Midas is a economy mod, meant to facilitate and assist trade in game."
-version = "0.1.0"
+version="${file.jarVersion}" #mandatory
 url = "https://example.com"
+modLoader="javafml" #mandatory
+
+loaderVersion="[43,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+# The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
+
 author = "Cptlsthjhg"
 credits = "Credit to contributors: Cptlsthjhg, Fabulous_Shrub."
 
