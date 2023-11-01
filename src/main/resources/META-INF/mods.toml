@@ -1,19 +1,39 @@
-[[mods]]
-modid = "midas"
-name = "Midas"
-displayName="Example Mod" #mandatory
-description = "Midas is a economy mod, meant to facilitate and assist trade in game."
-version="${file.jarVersion}" #mandatory
-url = "https://example.com"
 modLoader="javafml" #mandatory
-
 loaderVersion="[43,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 # The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
+license="All rights reserved"
+
+
+[[mods]]
+modId = "midas"
+name = "Midas"
+displayName="Midas Mod" #mandatory
+description = '''Midas is a economy mod, meant to facilitate and assist trade in game.'''
+version="${file.jarVersion}" #mandatory
+#version="1.19.2-1.0.0.0" #EXAMPLE VERSION
+#url = "https://example.com"
 
 author = "Cptlsthjhg"
 credits = "Credit to contributors: Cptlsthjhg, Fabulous_Shrub."
 
-[[dependencies]]
+
+[[dependencies.midas]]
+# the modid of the dependency
+modId="forge" #mandatory
+# Does this dependency have to exist - if not, ordering below must be specified
+mandatory=true #mandatory
+# The version range of the dependency
+versionRange="[43,)" #mandatory
+# An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+ordering="NONE"
+# Side this dependency is applied on - BOTH, CLIENT or SERVER
+side="BOTH"
+
+
+[[dependencies.midas]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.19,)"
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange="[1.19.2,1.20)"
+ordering="NONE"
+side="BOTH"
