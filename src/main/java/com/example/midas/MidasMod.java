@@ -48,8 +48,7 @@ public class MidasMod
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
-
+        
         //this is what we would use IF-- we had the ItemInit class contents inside of this mod.
         // Register the Deferred Register to the mod event bus so blocks get registered
         //BLOCKS.register(modEventBus);

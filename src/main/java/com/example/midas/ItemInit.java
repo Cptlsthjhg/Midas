@@ -27,5 +27,6 @@ public class ItemInit {
 
     //secondary example combat tab item
     public static final RegistryObject<Item> EV_ITEM = ITEMS.register("ev_item", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> EMMIRE_ITEM = ITEMS.register("emire_item", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 }
